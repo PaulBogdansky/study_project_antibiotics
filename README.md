@@ -7,7 +7,7 @@ This project is designed to analyze and process a specific dataset related to th
 **/models/** # Saved models and their parameters  
 **/preprocessing/** # Scripts for preprocessing data  
 **/statistics/** # Statistical analysis of data
-**/test/**  # Testing the model  
+**/test/** # Testing the model  
 **/visualization/** # Visualization of data and results  
 **README.md** # Current manual
 ## Data
