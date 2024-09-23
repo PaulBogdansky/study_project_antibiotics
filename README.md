@@ -109,6 +109,6 @@ python visualization/plot_results.py
 
 | Names           | Part in project                                                    |
 | --------------- | -------------------------------------------------------------------|
-| Pavel Bogdanov  | all tests scenarios ; features (based descriptors) ; Data satanist |
-| Mikhail Budanov | EDA and preprocessing ; visualizations ; Data analyst              |
-| Anita Bagramian | statistics and features (based bacterias) ;                        |
+| Pavel Bogdanov  | all tests scenarios ; features (based descriptors) ; Data Satanist |
+| Mikhail Budanov | EDA and preprocessing ; all visualizations ; Data Keksic           |
+| Anita Bagramian | statistics and features (based bacterias) ; Model build; Data Cyst |
