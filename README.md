@@ -77,8 +77,6 @@ After the feature engineering stage, new features may emerge based on the origin
 | is_mtcc                     | Binary flag: Strain registered in the MTCC collection               |
 | is_cip                      | Binary flag: Strain registered in the CIP collection                |
 
-
- 
 ## Requirements
 - Python 3.x
 - Necessary dependencies are listed in requirements.txt  
@@ -109,8 +107,8 @@ python visualization/plot_results.py
 **Important Note**: The code is designed to work only with the current data set. Using other data is not supported and may lead to incorrect results.  
 ## Authors
 
-| Names           | Part in project |
-| --------------- | --------------- |
-| Pavel Bogdanov  |                 |
-| Mikhail Budanov |                 |
-| Anita Bagramian |                 |
+| Names           | Part in project                                                    |
+| --------------- | -------------------------------------------------------------------|
+| Pavel Bogdanov  | all tests scenarios ; features (based descriptors) ; Data satanist |
+| Mikhail Budanov | EDA and preprocessing ; visualizations ; Data analyst              |
+| Anita Bagramian | statistics and features (based bacterias) ;                        |
