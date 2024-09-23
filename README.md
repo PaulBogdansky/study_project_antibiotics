@@ -77,7 +77,6 @@ After the feature engineering stage, new features may emerge based on the origin
 | is_mtcc                     | Binary flag: Strain registered in the MTCC collection               |
 | is_cip                      | Binary flag: Strain registered in the CIP collection                |
 
-
 ## Requirements
 - Python 3.x
 - Necessary dependencies are listed in requirements.txt  
