@@ -15,7 +15,7 @@ The dataset goes through several processing stages, including preprocessing and 
 1. Initial data  
 The initial data contains the following columns:  
 
-| Column 1         | Description                                                                                                 |
+| Column           | Description                                                                                                 |
 | ---------------- | ----------------------------------------------------------------------------------------------------------- |
 | molecule_ID      | Molecule or substance unique identifier                                                                     |
 | Smiles           | SMILES string describing molecular structure                                                                |
@@ -35,7 +35,7 @@ molecule_id,smiles,molecular_weight,logP,H_bond_donors,H_bond_acceptors,rotatabl
 
 After the preprocessing step, the data can be cleaned, normalized or transformed.  
 
-| Column 1         | Description                                                        |
+| Column           | Description                                                        |
 | ---------------- | ------------------------------------------------------------------ |
 | molecule_id      | Unique identifier of the molecule (unchanged)                      |
 | molecular_weight | Molecular weight (can be normalized or scaled)                     |
@@ -49,19 +49,36 @@ After the preprocessing step, the data can be cleaned, normalized or transformed
    
 After the feature engineering stage, new features may emerge based on the original data.
 
-| Column 1                   | Description                                                                 |
-| -------------------------- | --------------------------------------------------------------------------- |
-| molecule_id                | Unique molecule identifier                                                  |
-| molecular_weight_scaled    | Scaled molecular weight                                                     |
-| logP_scaled                | Scaled logarithm of the distribution coefficient                            |
-| H_bond_donors_binarized    | Binary indicator of whether a molecule has at least one hydrogen bond donor |
-| H_bond_acceptors_binarized | Binary feature for hydrogen bond acceptors                                  |
-| num_rotatable_bonds        | Total number of rotating links                                              |
-| smiles_vector_pca          | Reduced feature vector after PCA                                            |
-| new_feature_X              | A new feature built on a combination of data                                |
-| target_activity            | The target variable remains unchanged                                       |
+| Column                      | Description                                                         |
+| --------------------------- | ------------------------------------------------------------------- |
+| SMILES                      | String representation of the molecule in SMILES format              |
+| bacteria                    | Bacterial strain related to the molecule                            |
+| MIC (µg/mL)                 | Minimum Inhibitory Concentration (MIC) in micrograms per milliliter |
+| MIC (µmol/mL)               | Minimum Inhibitory Concentration (MIC) in micromoles per milliliter |
+| log MIC                     | Logarithm of the Minimum Inhibitory Concentration                   |
+| S. aureus                   | Confirmation of work with the S. aureus bacteria                    |
+| molar_mass                  | Molecular mass of the compound                                      |
+| mol_MR                      | Molecular refractivity index                                        |
+| logP                        | Lipophilicity (logarithm of the partition coefficient)              |
+| num_h_donors                | Number of hydrogen bond donors                                      |
+| num_h_acceptors             | Number of hydrogen bond acceptors                                   |
+| num_rotatable_bonds         | Number of rotatable bonds                                           |
+| tpsa                        | Topological polar surface area (TPSA)                               |
+| fraction_csp3               | Fraction of sp3-hybridized carbon atoms                             |
+| ring_count                  | Number of rings in the molecule                                     |
+| aromatic_ring_count         | Number of aromatic rings                                            |
+| mean_pagerank               | Average PageRank value for the molecule                             |
+| mean_degree_centrality      | Average Degree Centrality value for the molecule                    |
+| mean_closeness_centrality   | Average Closeness Centrality value for the molecule                 |
+| mean_betweenness_centrality | Average Betweenness Centrality value for the molecule               |
+| is_mrsa                     | Binary flag: Methicillin-resistant S. aureus (MRSA) strain          |
+| is_mssa                     | Binary flag: Methicillin-susceptible S. aureus (MSSA) strain        |
+| is_atcc                     | Binary flag: Strain registered in the ATCC collection               |
+| is_mtcc                     | Binary flag: Strain registered in the MTCC collection               |
+| is_cip                      | Binary flag: Strain registered in the CIP collection                |
 
-## Installation  
+
+ 
 ## Requirements
 - Python 3.x
 - Necessary dependencies are listed in requirements.txt  
